@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: medicare_raw
+    database: MEDICARE_DB
+    schema: PUBLIC
+    tables:
+      - name: MEDICARE_PART_D_SPENDING
+        description: "Raw Medicare Part D quarterly drug spending data loaded from CMS"

@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: mart_drug_spending_summary
+    description: "One row per drug per reporting period. Uses Overall rows only to avoid double counting manufacturer-level data."
+    columns:
+      - name: brand_name
+        description: "Brand name of the drug"
+        tests:
+          - not_null
+      - name: reporting_period
+        description: "Reporting period, either 2024 (Q1-Q4) or 2025 (Q1-Q3)"
+        tests:
+          - not_null
+      - name: total_spending
+        description: "Total Medicare Part D spending in dollars"
+        tests:
+          - not_null
+
+  - name: mart_glp1_class_analysis
+    description: "GLP-1 drugs only, tagged by molecule family. Used to analyze class-level spending growth and beneficiary trends."
+    columns:
+      - name: brand_name
+        tests:
+          - not_null
+      - name: glp1_molecule
+        description: "GLP-1 molecule family: Semaglutide, Tirzepatide, Dulaglutide, Liraglutide, or Exenatide"
+        tests:
+          - not_null
+
+  - name: mart_manufacturer_concentration
+    description: "Manufacturer-level spending aggregated by reporting period, including market share percentage."
+    columns:
+      - name: manufacturer_name
+        tests:
+          - not_null
+      - name: market_share_pct
+        description: "Manufacturer's share of total Part D spending for the period"
+        tests:
+          - not_null

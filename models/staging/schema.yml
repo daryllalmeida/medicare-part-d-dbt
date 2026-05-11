@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg_medicare__part_d_spending
+    description: "Cleaned and renamed Medicare Part D quarterly drug spending data. Casts currency columns from strings to floats and standardizes column names."
+    columns:
+      - name: brand_name
+        description: "Brand name of the drug"
+        tests:
+          - not_null
+
+      - name: generic_name
+        description: "Generic name of the drug"
+        tests:
+          - not_null
+
+      - name: manufacturer_name
+        description: "Manufacturer name, or 'Overall' for aggregated totals"
+        tests:
+          - not_null
+
+      - name: reporting_period
+        description: "Reporting period, either 2024 (Q1-Q4) or 2025 (Q1-Q3)"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['2024 (Q1-Q4)', '2025 (Q1-Q3)']
+
+      - name: total_spending
+        description: "Total Medicare Part D spending in dollars"
+        tests:
+          - not_null
