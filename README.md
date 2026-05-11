@@ -39,6 +39,6 @@ An analytics engineering project modeling Medicare Part D quarterly drug spendin
 
 ## Key Findings
 - Ozempic ($13B) and Mounjaro ($6.3B) are the 2nd and 4th largest Part D drug spends in 2024
-- Zepbound grew from $387K (full year 2024) to $572M (Q1–Q3 2025) — explosive GLP-1 market entry
+- Zepbound grew from $387K (full year 2024) to $572M (Q1–Q3 2025)
 - Wegovy nearly tripled from $301M (2024) to $696M (Q1–Q3 2025 only)
 - Novo Nordisk is the #2 manufacturer by total Part D spend at $18.6B in 2024
