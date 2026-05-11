@@ -37,6 +37,10 @@ An analytics engineering project modeling Medicare Part D quarterly drug spendin
 - **Snowflake** (trial account)
 - **Source data:** CMS Medicare Quarterly Part D Spending by Drug (Q3 2025 release)
 
+## Tableau Dashboard
+
+https://public.tableau.com/app/profile/daryll.dalmeida/viz/Medicare-PartD-Dashboard/MedicareDashboard
+
 ## Key Findings
 - Ozempic ($13B) and Mounjaro ($6.3B) are the 2nd and 4th largest Part D drug spends in 2024
 - Zepbound grew from $387K (full year 2024) to $572M (Q1–Q3 2025)
