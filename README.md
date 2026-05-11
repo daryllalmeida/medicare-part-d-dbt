@@ -34,8 +34,7 @@ An analytics engineering project modeling Medicare Part D quarterly drug spendin
 
 ## Tech Stack
 - **dbt Core** 1.11.3
-- **Snowflake** (trial)
-- **Python** / pandas (initial data profiling)
+- **Snowflake** (trial account)
 - **Source data:** CMS Medicare Quarterly Part D Spending by Drug (Q3 2025 release)
 
 ## Key Findings
