@@ -11,4 +11,4 @@ An analytics engineering project modeling Medicare Part D quarterly drug spendin
 ## Project Architecture
 
 
-![DAG]dbt_medicare_architecture.jpeg
+![DAG](dbt_medicare_architecture.jpeg)
