@@ -1,15 +1,14 @@
-Welcome to your new dbt project!
+# Medicare Part D Drug Spending Analytics — dbt + Snowflake
 
-### Using the starter project
+## Overview
+An analytics engineering project modeling Medicare Part D quarterly drug spending data from CMS (Centers for Medicare & Medicaid Services). Built with dbt Core and Snowflake following the three-layer architecture: sources → staging → marts.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Business Questions Answered
+- Which drugs drive the most Medicare Part D spending?
+- How is the GLP-1 class (Ozempic, Mounjaro, Wegovy, Zepbound) growing year over year?
+- Which manufacturers control the largest share of Part D spend?
+
+## Project Architecture
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+![DAG]dbt_medicare_architecture.jpeg
