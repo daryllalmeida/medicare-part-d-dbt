@@ -12,7 +12,7 @@ manufacturer_spend as(
     count(distinct brand_name) as distinct_drugs
 
     from staging
-    where manufacturer_name = 'Overall'
+    where manufacturer_name != 'Overall'
     group by 1,2
 )
 ,
